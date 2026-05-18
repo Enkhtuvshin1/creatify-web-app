@@ -1,26 +1,32 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/landing/hero";
+import { LogoMarquee } from "@/components/landing/logo-marquee";
+import { RoleTabs } from "@/components/landing/role-tabs";
+import { Features } from "@/components/landing/features";
+import { Workflow } from "@/components/landing/workflow";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Creatify — Зөв брэнд, зөв бүтээгчтэй товчхон уулзана" },
+      { name: "description", content: "Монголын брэнд × бүтээгч маркетплэйс. Хайлт, хэлэлцээр, escrow төлбөр нэг дороос." },
+      { property: "og:title", content: "Creatify" },
+      { property: "og:description", content: "Зөв брэнд, зөв бүтээгчтэй товчхон уулзана." },
+      { property: "og:url", content: "/" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <>
+      <Hero />
+      <LogoMarquee />
+      <RoleTabs />
+      <Features />
+      <Workflow />
+    </>
+  );
 }
