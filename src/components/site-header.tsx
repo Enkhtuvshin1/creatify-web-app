@@ -4,11 +4,11 @@ import { Search, Sun, Moon, Menu, X } from "lucide-react";
 import { Logo } from "./logo";
 import { useTheme } from "./theme-provider";
 
-const navItems = [
+const navItems: Array<{ to: string; label: string; hash?: string }> = [
   { to: "/creators", label: "Бүтээгчид" },
   { to: "/jobs", label: "Зарууд" },
-  { to: "/#features", label: "Боломжууд" },
-  { to: "/#how", label: "Хэрхэн ажилладаг" },
+  { to: "/", hash: "features", label: "Боломжууд" },
+  { to: "/", hash: "how", label: "Хэрхэн ажилладаг" },
 ];
 
 export function SiteHeader() {
@@ -25,8 +25,9 @@ export function SiteHeader() {
           <nav className="hidden items-center gap-8 lg:flex">
             {navItems.map((n) => (
               <Link
-                key={n.to}
+                key={n.label}
                 to={n.to}
+                hash={n.hash}
                 className="text-[14px] font-medium text-foreground/75 transition-colors hover:text-primary"
               >
                 {n.label}
@@ -77,8 +78,9 @@ export function SiteHeader() {
           <div className="mx-auto flex max-w-[1400px] flex-col gap-1 px-5 py-4">
             {navItems.map((n) => (
               <Link
-                key={n.to}
+                key={n.label}
                 to={n.to}
+                hash={n.hash}
                 onClick={() => setOpen(false)}
                 className="rounded-md px-3 py-2 text-[15px] font-medium text-foreground/80 hover:bg-muted"
               >
