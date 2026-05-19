@@ -19,6 +19,11 @@ export function LogoMarquee() {
   return (
     <section className="border-b border-border bg-muted/30">
       <div className="mx-auto max-w-[1400px] overflow-hidden px-6 py-10 lg:px-10">
+        <div className="mb-4 text-center">
+          <span className="font-mono-ui text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+            Категориудыг олж хар
+          </span>
+        </div>
         <div className="relative overflow-hidden">
           <div className="animate-marquee flex w-max items-center gap-12 lg:gap-16">
             {allItems.map((cat, i) => (
