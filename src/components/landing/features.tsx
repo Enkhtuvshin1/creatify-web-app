@@ -52,8 +52,8 @@ export function Features() {
             Эхнээс нь дуустал нэг платформ дээр.
           </h2>
           <p className="mt-5 text-[16px] leading-relaxed text-muted-foreground">
-            Хайлт, хэлэлцээр, чат, escrow төлбөр, контент баталгаажуулалт —
-            ажил бүрийг тусдаа хэрэгсэлгүйгээр зохион байгуул.
+            Хайлт, хэлэлцээр, чат, escrow төлбөр, контент баталгаажуулалт — ажил бүрийг тусдаа
+            хэрэгсэлгүйгээр зохион байгуул.
           </p>
         </div>
 
@@ -66,12 +66,8 @@ export function Features() {
               <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary/10 text-primary">
                 <f.icon size={20} />
               </div>
-              <h3 className="font-display text-[18px] font-semibold tracking-tight">
-                {f.title}
-              </h3>
-              <p className="text-[14px] leading-relaxed text-muted-foreground">
-                {f.desc}
-              </p>
+              <h3 className="font-display text-[18px] font-semibold tracking-tight">{f.title}</h3>
+              <p className="text-[14px] leading-relaxed text-muted-foreground">{f.desc}</p>
             </div>
           ))}
         </div>

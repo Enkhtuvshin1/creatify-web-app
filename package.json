@@ -1,8 +1,11 @@
 {
-  "name": "tanstack_start_ts",
+  "name": "creatify-web-app",
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
@@ -12,7 +15,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@cloudflare/vite-plugin": "^1.25.5",
+    "@cloudflare/vite-plugin": "1.37.1",
     "@hookform/resolvers": "^5.2.2",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
@@ -68,7 +71,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
-    "@lovable.dev/vite-tanstack-config": "^1.7.0",
     "@types/node": "^22.16.5",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
@@ -82,6 +84,6 @@
     "prettier": "^3.7.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.56.1",
-    "vite": "^7.3.1"
+    "vite": "7.3.3"
   }
 }

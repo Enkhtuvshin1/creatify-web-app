@@ -52,8 +52,8 @@ export function SiteFooter() {
           </div>
           <div className="px-6 py-10 lg:px-10">
             <p className="text-[15px] leading-relaxed text-muted-foreground">
-              Профайлаа үнэгүй үүсгээд, эхний хамтын ажиллагаагаа өнөөдөр л
-              эхлүүлээрэй. Escrow төлбөр хамгаалагдсан.
+              Профайлаа үнэгүй үүсгээд, эхний хамтын ажиллагаагаа өнөөдөр л эхлүүлээрэй. Escrow
+              төлбөр хамгаалагдсан.
             </p>
           </div>
           <div className="flex flex-col gap-2 px-6 py-10 lg:px-10">
@@ -98,10 +98,18 @@ export function SiteFooter() {
         <div className="mb-10 flex flex-wrap items-center justify-between gap-4">
           <Logo />
           <div className="flex gap-2 text-foreground/60">
-            <a href="#" className="rounded-md border border-border p-2 hover:text-foreground">X</a>
-            <a href="#" className="rounded-md border border-border p-2 hover:text-foreground">in</a>
-            <a href="#" className="rounded-md border border-border p-2 hover:text-foreground">YT</a>
-            <a href="#" className="rounded-md border border-border p-2 hover:text-foreground">GH</a>
+            <a href="#" className="rounded-md border border-border p-2 hover:text-foreground">
+              X
+            </a>
+            <a href="#" className="rounded-md border border-border p-2 hover:text-foreground">
+              in
+            </a>
+            <a href="#" className="rounded-md border border-border p-2 hover:text-foreground">
+              YT
+            </a>
+            <a href="#" className="rounded-md border border-border p-2 hover:text-foreground">
+              GH
+            </a>
           </div>
         </div>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">

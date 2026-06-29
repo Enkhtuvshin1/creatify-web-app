@@ -16,7 +16,9 @@ export const Route = createFileRoute("/jobs")({
 function JobsPage() {
   return (
     <section className="mx-auto max-w-[1400px] px-6 py-24 lg:px-10 lg:py-32">
-      <p className="font-mono-ui mb-3 text-[12px] uppercase tracking-[0.18em] text-primary">Зарууд</p>
+      <p className="font-mono-ui mb-3 text-[12px] uppercase tracking-[0.18em] text-primary">
+        Зарууд
+      </p>
       <h1 className="font-display text-4xl font-bold tracking-tight md:text-6xl">
         Идэвхтэй кампанит ажлууд.
       </h1>

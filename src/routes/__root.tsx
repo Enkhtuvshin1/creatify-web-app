@@ -76,10 +76,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Creatify — Зөв брэнд, зөв бүтээгчтэй товчхон уулзана" },
-      { name: "description", content: "Монголын брэнд болон контент бүтээгчдийг шуурхай, найдвартай, ил тод холбох платформ." },
+      {
+        name: "description",
+        content:
+          "Монголын брэнд болон контент бүтээгчдийг шуурхай, найдвартай, ил тод холбох платформ.",
+      },
       { name: "author", content: "Creatify" },
       { property: "og:title", content: "Creatify — Brand × Creator marketplace" },
-      { property: "og:description", content: "Хайлт, хэлэлцээр, escrow төлбөр хүртэлх бүх үйл явцыг нэг дороос." },
+      {
+        property: "og:description",
+        content: "Хайлт, хэлэлцээр, escrow төлбөр хүртэлх бүх үйл явцыг нэг дороос.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],

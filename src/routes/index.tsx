@@ -10,7 +10,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Creatify — Зөв брэнд, зөв бүтээгчтэй товчхон уулзана" },
-      { name: "description", content: "Монголын брэнд × бүтээгч маркетплэйс. Хайлт, хэлэлцээр, escrow төлбөр нэг дороос." },
+      {
+        name: "description",
+        content:
+          "Монголын брэнд × бүтээгч маркетплэйс. Хайлт, хэлэлцээр, escrow төлбөр нэг дороос.",
+      },
       { property: "og:title", content: "Creatify" },
       { property: "og:description", content: "Зөв брэнд, зөв бүтээгчтэй товчхон уулзана." },
       { property: "og:url", content: "/" },

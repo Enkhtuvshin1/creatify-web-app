@@ -18,12 +18,11 @@ export function Hero() {
             Брэнд × Бүтээгч маркетплэйс
           </p>
           <h1 className="font-display text-[44px] font-bold leading-[1.02] tracking-tight md:text-[64px] lg:text-[78px]">
-            Зөв брэнд, зөв бүтээгчтэй{" "}
-            <span className="text-primary">товчхон</span> уулзана.
+            Зөв брэнд, зөв бүтээгчтэй <span className="text-primary">товчхон</span> уулзана.
           </h1>
           <p className="mt-7 max-w-[480px] text-[16px] leading-relaxed text-muted-foreground md:text-[17px]">
-            Хайлт, хэлэлцээр, Escrow төлбөр хүртэлх бүх үйл явцыг нэг дороос
-            шийдсэн Монголын анхны итгэмжит платформ. Секундын дотор эхэл.
+            Хайлт, хэлэлцээр, Escrow төлбөр хүртэлх бүх үйл явцыг нэг дороос шийдсэн Монголын анхны
+            итгэмжит платформ. Секундын дотор эхэл.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">

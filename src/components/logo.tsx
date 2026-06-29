@@ -1,6 +1,8 @@
 export function Logo({ className = "" }: { className?: string }) {
   return (
-    <span className={`flex items-center gap-2 font-display text-[19px] font-bold tracking-tight ${className}`}>
+    <span
+      className={`flex items-center gap-2 font-display text-[19px] font-bold tracking-tight ${className}`}
+    >
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
         <circle cx="12" cy="12" r="2.2" fill="currentColor" />
         <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.4" />

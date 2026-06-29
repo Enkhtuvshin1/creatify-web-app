@@ -60,10 +60,7 @@ export function RoleTabs() {
           <div className="grid grid-cols-1 divide-border md:grid-cols-2 md:divide-x">
             <ol className="divide-y divide-border">
               {active.steps.map((step, i) => (
-                <li
-                  key={step}
-                  className="flex items-start gap-5 px-6 py-5 md:px-8"
-                >
+                <li key={step} className="flex items-start gap-5 px-6 py-5 md:px-8">
                   <span className="font-mono-ui mt-0.5 text-[12px] text-muted-foreground">
                     0{i + 1}
                   </span>
@@ -79,12 +76,12 @@ export function RoleTabs() {
                   Жишээ
                 </p>
                 <pre className="font-mono-ui overflow-x-auto rounded-md bg-foreground p-4 text-[12px] leading-relaxed text-background">
-{tab === "creator"
-  ? `$ creatify apply --job=summer-campaign
+                  {tab === "creator"
+                    ? `$ creatify apply --job=summer-campaign
 ✓ Profile verified
 ✓ Application sent
 → Awaiting brand response...`
-  : `$ creatify post --budget=2,500,000
+                    : `$ creatify post --budget=2,500,000
 ✓ Escrow deposit secured
 ✓ Job is live
 → Receiving applications...`}
